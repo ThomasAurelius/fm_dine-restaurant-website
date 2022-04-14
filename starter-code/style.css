@@ -458,8 +458,9 @@ input[type=time] {
 .letterspacing-3 {
    letter-spacing: 2px;
 }
-
-/* design system */
+/* ------------- */
+/* Design system */
+/* ------------- */
 
 .colors {
    gap: 2rem;
@@ -908,29 +909,36 @@ button{
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
-   height:400px;;
-   
+   height:480px;   
 }
+
+.booking-logo {
+   padding-top: 40px;;
+}
+
+
 .booking {
-   position:relative;
+   position: relative;
    gap: 4rem;
    margin-top: 50px;
 }
 
 .booking-form {
-   position: absolute;
-   top: 60px;
-   right: 0px;
+   position: relative;
+   /* top: 60px;
+   right: 0px; */
    background-color: white;
    padding: 40px;
    min-width: 400px;
    max-width: 400px;
+   margin-top: 60px;
    margin-right: 50px;
 }
 
 .booking-text {
    max-width: 33vw;
 }
+
 .form-btn {
    background-color: transparent;
    width: 100%;
@@ -947,7 +955,7 @@ button{
 
 .booking-curve  {
    position:relative;
-   right: 30vw;
+   right: 10vw;
    z-index: -2;
 }
 
@@ -966,6 +974,10 @@ button{
       padding-top: 150px;
       
    }
+
+   .booking h1 {
+      font-size: 3.5rem;
+   }
 }
 
 @media (max-width: 1000px) {
@@ -978,8 +990,9 @@ button{
 @media (max-width: 900px) {
    .section-5-left img {
       padding-top: 300px;
-      
-
+   }
+   .booking h1 {
+      font-size: 3rem;
    }
 }
 
@@ -1105,5 +1118,71 @@ button{
       align-self: baseline;
    }
 
+   .booking {
+      flex-direction: column;
+      margin-top: 0;
+   }
+
+   .booking-text {
+      max-width: 100%;
+      text-align: center;
+   }
+
+   .booking-header {
+      height: 600px;
+      margin: 0 auto;
+   }
+
+   .booking-form {
+      margin: 0 auto;
+   }
 }
 
+@media (max-width: 600px) {
+   .booking h1{
+      font-size: 3rem;
+   }
+
+   
+
+   .booking-form {
+      position: static;
+      margin: 0;
+      justify-self: center;
+      align-self: center;
+   }
+}
+
+@media (max-width: 420px) {
+   .booking h1 {
+      font-size: 2rem;
+   }
+   .container.booking {
+      padding: 0;
+   }
+
+   .footer {
+      margin: 0;
+      margin-top: 100px;
+
+   }
+
+   .footer-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      margin: 0 auto;
+      padding: 0;
+   }
+
+   .footer-logo {
+      margin: 0 auto;
+   }
+
+   .booking-form {
+      min-width: 375px;
+      max-width: 375px;
+   }
+}
