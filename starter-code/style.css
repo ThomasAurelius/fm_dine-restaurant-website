@@ -540,16 +540,28 @@ input[type=text].active-input  {
 input[type=text].error-input {
    color: red;
 }
+input[type=text] {
+   width: 100%;
+}
 
-input[type=number] {
+input[type=email] {
+   width: 100%;
+}
+
+input[type=date] {
+   width: 100%;
+   text-align: center;
+}
+
+input[type=time] {
+   width: 100%;
    text-align: center;
 }
 
 .input-number {
    justify-content: space-between;
    align-items: center;
-   max-width: 208px;
-   min-width: 208px;
+   width: 100%;
    border-bottom: 1px solid black;
    text-align: center;
 }
@@ -907,8 +919,8 @@ button{
    right: 0px;
    background-color: white;
    padding: 40px;
-   min-width: 300px;
-   max-width: 300px;
+   min-width: 400px;
+   max-width: 400px;
    margin-right: 50px;
 }
 
@@ -918,23 +930,22 @@ button{
 .form-btn {
    background-color: transparent;
    width: 100%;
-   margin-top: 10px;
+   margin-top: 20px;
 }
 
 .booking-lines {
    position: absolute;
    bottom: -30px;
-   right: 220px;
+   right: 310px;
    z-index: -1;
 }
 
 .booking-curve  {
    position:relative;
    right: 30vw;
+   z-index: -2;
 }
 
-
-.booking-curve img {}
 
 @media (max-width: 1100px) {
    .section-5-left img {
