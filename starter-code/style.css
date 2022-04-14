@@ -598,6 +598,11 @@ input[type=time] {
    margin-bottom: 30px;
 }
 
+.btn a {
+   text-decoration: none;
+   color: white;
+}
+
 .btn-header{
    justify-content: center;
    align-items: center;
@@ -870,6 +875,10 @@ button{
    background-color: transparent;
 }
 
+.reservation-btn:hover a, .reservation-btn:focus a {
+   color: #111111;
+}
+
 /* Footer */
 
 .footer {
@@ -909,7 +918,7 @@ button{
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
-   height:480px;   
+   height: 480px;   
 }
 
 .booking-logo {
