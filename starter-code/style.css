@@ -1152,7 +1152,9 @@ button{
       font-size: 3rem;
    }
 
-   
+   header {
+      background-image: url('./images/homepage/hero-bg-mobile.jpg');
+   }
 
    .booking-form {
       position: static;
