@@ -410,8 +410,7 @@ section {
    min-width: 50%;
 }
 
-.typo-top {
-   
+.typo-top {   
    justify-content: space-between;
 }
 
@@ -470,11 +469,16 @@ section {
 
 .btn {
    padding: 15px 40px;
-   margin: 40px 40px 10px 40px;
+   margin: 40px 0px 10px 0px;
    background-color: #17192b;
    border: 0;
    color: white;
    outline: 1px solid white;
+}
+
+.btn a {
+   text-decoration: none;
+   color: white;
 }
 
 .btn-light {
@@ -487,10 +491,15 @@ section {
    cursor: pointer;
 }
 
-.btn-light:hover, .btn-light:focus {
+.btn-light.hover, .btn-light:hover, .btn-light:focus {
    background-color: #111111;
    color: white;
    cursor: pointer;
+}
+
+.btn-dark.hover {
+   background-color: white;
+   color: #17192b;
 }
 
 .btn-inactive {
@@ -513,14 +522,563 @@ section {
 .form {
    justify-content: space-between;
    align-items: center;
+   margin-block: 20px;
 }
 
 input {
    border: none;
    border-bottom: 1px solid #8e8e8e;
+   outline: none;
+   margin-bottom: 20px;
+}
+
+input[type=text].active-input  {
+   color: black;
    
 }
 
-input:active {
+input[type=text].error-input {
+   color: red;
+}
+
+input[type=number] {
+   text-align: center;
+}
+
+.input-number {
+   justify-content: space-between;
+   align-items: center;
+   max-width: 208px;
+   min-width: 208px;
+   border-bottom: 1px solid black;
+   text-align: center;
+}
+
+.minus    {
+   background-image: url('./images/icons/icon-minus.svg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: transparent;
+   width: 25px;
+   height: 25px;
+   border: none;
+   cursor: pointer;
+}
+
+.plus {
+   background-image: url('./images/icons/icon-plus.svg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: transparent;
+   height: 25px;
+   width: 25px;
+   border: none;
+   cursor: pointer;
+}
+
+[list]::-webkit-calendar-picker-indicator{
+   opacity: 0;
+}
+
+.input-number--inactive {
+   color: rgba(92, 104, 122, .5)
+}
+
+.input-list {
+   position: relative;
+}
+
+.input-icon {
+   position: absolute;
+   right: 0px;
+   top: 7px;
+}
+/* --------------- */
+/* Header          */
+/* --------------- */
+
+header {
+   min-height: 120vh;
+   background-color: #111111;
+   background-image: url('./images/homepage/hero-bg-desktop.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 70% center;
+}
+
+.hero-title {
+   margin-top: 60px;
+}
+
+.hero-img {
+   max-height: 100%;
+   max-width: 100%;
+ 
+}
+
+.logo { 
+   padding-top: 40px;
+}
+.hero-text {
+   max-width: 50%;  
+}
+
+.hero-btn {
+   background-color: transparent;
+   border: none;
+   margin-block: 30px;
+   padding: 15px 30px;
+   outline: 1px solid white;
+   color: white
+}
+
+.hero-btn:hover, .hero-btn:focus {
+   color: #111111;
+   background-color: #ffffff;
+}
+
+/* Section 2 */
+
+.section-2-curve {
+   position: relative;
+}
+
+.section-2-curve img {
+   position: absolute;
+   top: 150px;
+}
+
+.section-2-img {
+   margin-top: -40px;
+   min-width: 40vw;
+}
+
+.section-2 {
+   justify-content: center;
+   align-items: center;
+   gap: 5em;
+}
+
+.section-2-title {
+   margin-top: 30px;
+}
+
+/* Section 3 */
+
+.section-3-curve {
+   position: relative;
+}
+
+.section-3-curve img {
+   position: absolute;
+   bottom: -600px;
+   right: 0;
+}
+
+.section-3-lines {
+   position: absolute;
+   top: 260px;
+}
+
+.section-3-img {
+   margin-top: 40px;
+   min-width: 40vw;
+}
+
+.section-3 {
+   
+   justify-content: center;
+   align-items: center;
+   gap: 5em;
+}
+
+.section-3-title {
+   margin-top: 30px;
    
 }
+
+/* Section 4 */
+
+#section-4 {
+   margin-top: -50px;
+   background-color: #111111;
+   color:  white;
+   padding-top: 100px;
+}
+
+.section-4 {   
+   justify-content: center;
+   align-items: center;   
+}
+
+.section-4-left {
+   max-width: 30vw;
+   padding-block: 50px;
+}
+
+.section-4-right {
+   flex-direction: column;
+   padding-bottom: 50px;
+   
+}
+
+.section-4-img {   
+   width: 200px;
+}
+
+.section-4-img img {
+   height: 100%;
+}
+
+.menu-item {    
+   align-items: center;
+}
+
+.section-4-right hr {
+   width: 100%;
+}
+
+/* Section 5 */
+
+.section-5-accents {
+   position: relative;
+}
+
+.section-5-curve {
+   position: absolute;
+   top:-50px;
+}
+
+.section-5-img {
+   position: relative;
+}
+
+.section-5-lines {
+   position: absolute;
+   top: -40px;
+   left: -400px;
+   height: 30%;   
+}
+
+#section-5 {
+   margin-block: 50px;
+}
+
+.section-5 {
+   gap: 3rem;
+   justify-content: space-between;
+}
+
+.section-5-left img {
+   padding-top: 40px;
+   min-width: 40vw;
+}
+
+.section-5-right {
+   width: 40vw;
+}
+
+.section-5-title {
+   margin-top: 50px;
+}
+
+button{
+   display: block;
+   cursor: pointer;
+} 
+
+.section-5-btns {
+   margin-top: 30px;
+}
+
+.section-5-btns button {
+   background-color: transparent;
+   border: 0;
+   margin-block: 10px;
+   color: rgba(76, 76, 76, .5);
+}
+
+.section-5-btns button:hover, .section-5-btns button:focus {
+   cursor: pointer;
+}
+
+.section-5-btns .active {
+   color: #111111
+}
+
+.section-5-btn {
+   position: relative;
+
+}
+
+.section-5-btn img {
+   position: absolute;
+   top: 7px;
+   left: -70px
+}
+
+.hidden {
+   display: none;
+}
+
+
+.event-btn:hover {
+   background-color: transparent;
+   border: 1px solid #17192b;
+   
+}
+
+.event-btn:hover a {
+   color: #17192b;
+   font-weight: 700;
+}
+
+/* Section 6 */
+
+#section-6 {
+   background-image: url('./images/homepage/ready-bg-desktop.jpg');
+   height: 35vh;
+}
+
+.section-6 {
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;;
+}
+
+.section-6 h3 {
+   font-size: 2rem;
+}
+
+.reservation-btn {
+   margin: 0;
+   background-color: transparent;
+}
+
+/* Footer */
+
+.footer {
+   background-color: #111111;
+   color: white;
+   height: 100%;
+}
+
+.footer-text{
+   justify-content: space-evenly;
+   align-items: center;
+   padding-block: 30px;
+}
+.footer-logo{
+   height: 40px;
+}
+
+.footer-address {
+   flex-direction: column;
+}
+
+.footer-hours {
+   flex-direction: column;
+}
+
+.tablet, .mobile {
+   display: none;
+}
+
+
+/* Booking */
+
+
+.booking-header {
+   background-image: url('./images/booking/hero-bg-desktop.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 70vh;
+   
+}
+.booking {
+   position:relative;
+   gap: 4rem;
+}
+
+.booking-form {
+   position: absolute;
+   top: 60px;
+   right: 0px;
+   background-color: white;
+   padding: 40px;
+   min-width: 300px;
+   max-width: 300px;
+   margin-right: 50px;
+}
+
+.booking-text {
+   max-width: 33vw;
+}
+.form-btn {
+   background-color: transparent;
+   width: 100%;
+   margin-top: 10px;
+}
+
+.booking-lines {
+   position: absolute;
+   bottom: -30px;
+   right: 220px;
+   z-index: -1;
+}
+
+.booking-curve  {
+   position:relative;
+   right: 30vw;
+}
+
+
+.booking-curve img {}
+
+@media (max-width: 1100px) {
+   .section-5-left img {
+      padding-top: 150px;
+      
+   }
+}
+
+@media (max-width: 1000px) {
+   .section-5-left img {
+      padding-top: 200px;
+      
+   }
+}
+
+@media (max-width: 900px) {
+   .section-5-left img {
+      padding-top: 300px;
+      
+
+   }
+}
+
+@media (max-width: 768px) {
+   
+   .desktop {
+      display: none;
+   }
+   .tablet {
+      display: block;
+   }
+
+   header {
+      background-image: url('./images/homepage/hero-bg-tablet.jpg');
+      background-position: center center;
+   }
+
+   .hero-text {
+      text-align: center;
+      margin-top: 100px;
+      max-width: 100%;
+   }
+
+   .hero-btn {
+      margin: 20px auto;
+   }
+
+   .section-2 {
+      margin-top: -30px;
+      flex-direction: column;
+   }
+
+   .section-3 {
+      flex-direction: column;
+   }
+
+   .section-3-text {
+      order: 2;
+      margin-bottom: 100px;
+   }
+
+   .section-3-img {
+      order: 1;
+   }
+
+   .section-4 {
+      flex-direction: column;
+   }
+
+   .section-4-left {
+      max-width: 100%;
+      text-align: center;
+   }
+
+   .section-5 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .section-5-right {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      text-align: center;
+   }
+
+   .event-btn {
+      margin: 20px auto;
+   }
+
+   .section-5-info {
+      order: 2
+   }
+
+   .section-5-btns {
+      order: 1;
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   .event-btn {
+      order: 3;
+   }
+
+   .section-5-btn img {
+      top: -10px;
+      left: 40px;
+   }
+
+   .section-6 {
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+   }
+
+   .section-6 h3 {
+      font-size: 1.5rem;
+      padding-top: 20px;
+   }
+
+   .footer {
+      height: 100%;
+   }
+
+   .footer-text {
+      display: grid;
+      grid-template-areas: 
+      "logo address"
+      "logo hours";
+   }
+   .footer-address {
+      grid-area: address;
+   }
+   
+   .footer-hours {
+      grid-area: hours
+   }
+
+   .footer-logo {
+      grid-area: logo;
+      
+      align-self: baseline;
+   }
+
+}
+

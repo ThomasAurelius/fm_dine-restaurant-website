@@ -9,30 +9,62 @@
   <title>Frontend Mentor | Dine Website Challenge</title>
 </head>
 <body>
+<div class="booking-header">
+    <div class="container"><img src="./images/logo.svg" alt="logo"></div>
+    <div class="container booking flex">      
+      <div class="booking-text">
+        <h1 class="text-white">Reservations</h1>
+        <p class="body1 text-white">
+          We can’t wait to host you. If you have any special requirements please feel free to
+          call on the phone number below. We’ll be happy to accommodate you.
+        </p>
+      </div>
+      <div class="booking-form">
+        
+        <form action="">
+          <input required type="text" placeholder="Name"><span class="sr-only">Name</span></input>
+          <input required type="email" placeholder="Email"><span class="sr-only">Email</span></input>          
+          <label for="date">Date:</label>        
+          <input id="date" type="date"></input>
+          <br>
+          <label for="time">Time:</label>
+          <input id="time" type="time"></input>
+          <div class="input-number flex">
+            <button id="minus" class="minus"></button>
+            <span id="people-count" class="people-count fw-bold">4 people </span>
+            <button id="plus" class="plus"></button>
+          </div>
+          <button class="form-btn">Make Reservation</button>
+        </form>
+        <img class="booking-lines" src="./images/patterns/pattern-lines.svg" alt="lines">
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="booking-curve">
+    <img src="./images/patterns/pattern-curve-bottom-right.svg" alt="decorative background">
+</div>
 
-  Reservations
-
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
 
 
-
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
+<footer>
+  <div class="footer">
+    <div class="container footer-text flex">
+      <img class="footer-logo" src="./images/logo.svg" alt="">
+      <div class="footer-address flex">
+        <p>Marthwaite, Sedbergh</p>
+        <p>Cumbria</p>
+        <p>+00 44 123 4567</p>
+      </div>
+      <div class="footer-hours flex">
+        <p>Open Times</p>
+        <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+        <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
