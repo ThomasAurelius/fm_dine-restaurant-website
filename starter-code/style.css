@@ -671,6 +671,7 @@ header {
 .section-2-img {
    margin-top: -40px;
    min-width: 40vw;
+   box-shadow: 6px 6px 6px rgba(0, 0, 0, .9);
 }
 
 .section-2 {
@@ -703,6 +704,7 @@ header {
 .section-3-img {
    margin-top: 40px;
    min-width: 40vw;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, .7);
 }
 
 .section-3 {
@@ -744,10 +746,12 @@ header {
 
 .section-4-img {   
    width: 200px;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, .7);
 }
 
 .section-4-img img {
    height: 100%;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, .7);
 }
 
 .menu-item {    
@@ -857,6 +861,9 @@ button{
 
 #section-6 {
    background-image: url('./images/homepage/ready-bg-desktop.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
    height: 35vh;
 }
 
@@ -930,6 +937,7 @@ button{
    position: relative;
    gap: 4rem;
    margin-top: 50px;
+   
 }
 
 .booking-form {
@@ -942,6 +950,7 @@ button{
    max-width: 400px;
    margin-top: 60px;
    margin-right: 50px;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.7);
 }
 
 .booking-text {

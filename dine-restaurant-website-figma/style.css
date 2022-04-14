@@ -24,7 +24,7 @@ blockquote,
 dl,
 dd {
    margin: 0;
-   
+
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -208,12 +208,11 @@ section {
    --fs-300: 1rem;
    --fs-200: 0.875rem;
    --fs-100: 0.825rem
+      /* font-families */
+      --ff-serif: "Spartan", serif;
 
-   /* font-families */
-   --ff-serif: "Spartan", serif;
 
-   
-  
+
 }
 
 /* ------------------- */
@@ -458,6 +457,7 @@ input[type=time] {
 .letterspacing-3 {
    letter-spacing: 2px;
 }
+
 /* ------------- */
 /* Design system */
 /* ------------- */
@@ -530,11 +530,11 @@ input[type=time] {
 
 .beaver .color-sample {
    background-color: #9e7f66;
-   
+
 }
 
 .cod-grey .color-sample {
-   background-color: #111111;   
+   background-color: #111111;
 }
 
 .mirage .color-sample {
@@ -545,7 +545,7 @@ input[type=time] {
    background-color: #242b37;
 }
 
-.shuttle-grey .color-sample{
+.shuttle-grey .color-sample {
    background-color: #5c6779;
 }
 
@@ -555,20 +555,20 @@ input[type=time] {
    min-width: 50%;
 }
 
-.typo-top {   
+.typo-top {
    justify-content: space-between;
 }
 
 .alphabet {
    max-width: 35%;
-   word-wrap:break-word;
+   word-wrap: break-word;
    letter-spacing: 2px;
 }
 
 #buttons-dark {
    display: flex;
    justify-content: flex-end;
- }
+}
 
 #buttons-light {
    display: flex;
@@ -576,7 +576,7 @@ input[type=time] {
 }
 
 .buttons-dark {
-   background-color:#17192b;
+   background-color: #17192b;
    border-bottom-left-radius: 50px;
 }
 
@@ -585,8 +585,8 @@ input[type=time] {
    border-bottom-left-radius: 50px;
 }
 
-.buttons-dark > div,
-.buttons-light > div {
+.buttons-dark>div,
+.buttons-light>div {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -594,7 +594,7 @@ input[type=time] {
 
 }
 
-.buttons > small {
+.buttons>small {
    margin-bottom: 30px;
 }
 
@@ -603,7 +603,7 @@ input[type=time] {
    color: white;
 }
 
-.btn-header{
+.btn-header {
    justify-content: center;
    align-items: center;
 }
@@ -633,14 +633,15 @@ header {
 .hero-img {
    max-height: 100%;
    max-width: 100%;
- 
+
 }
 
-.logo { 
+.logo {
    padding-top: 40px;
 }
+
 .hero-text {
-   max-width: 50%;  
+   max-width: 50%;
 }
 
 .hero-btn {
@@ -652,7 +653,8 @@ header {
    color: white
 }
 
-.hero-btn:hover, .hero-btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
    color: #111111;
    background-color: #ffffff;
 }
@@ -671,6 +673,7 @@ header {
 .section-2-img {
    margin-top: -40px;
    min-width: 40vw;
+   box-shadow: 6px 6px 6px rgba(0, 0, 0, .4);
 }
 
 .section-2 {
@@ -703,10 +706,11 @@ header {
 .section-3-img {
    margin-top: 40px;
    min-width: 40vw;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, .4);
 }
 
 .section-3 {
-   
+
    justify-content: center;
    align-items: center;
    gap: 5em;
@@ -714,7 +718,7 @@ header {
 
 .section-3-title {
    margin-top: 30px;
-   
+
 }
 
 /* Section 4 */
@@ -722,13 +726,13 @@ header {
 #section-4 {
    margin-top: -50px;
    background-color: #111111;
-   color:  white;
+   color: white;
    padding-top: 100px;
 }
 
-.section-4 {   
+.section-4 {
    justify-content: center;
-   align-items: center;   
+   align-items: center;
 }
 
 .section-4-left {
@@ -739,18 +743,20 @@ header {
 .section-4-right {
    flex-direction: column;
    padding-bottom: 50px;
-   
+
 }
 
-.section-4-img {   
+.section-4-img {
    width: 200px;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, .4);
 }
 
 .section-4-img img {
    height: 100%;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, .4);
 }
 
-.menu-item {    
+.menu-item {
    align-items: center;
 }
 
@@ -766,7 +772,7 @@ header {
 
 .section-5-curve {
    position: absolute;
-   top:-50px;
+   top: -50px;
 }
 
 .section-5-img {
@@ -777,7 +783,7 @@ header {
    position: absolute;
    top: -40px;
    left: -400px;
-   height: 30%;   
+   height: 30%;
 }
 
 #section-5 {
@@ -802,10 +808,10 @@ header {
    margin-top: 50px;
 }
 
-button{
+button {
    display: block;
    cursor: pointer;
-} 
+}
 
 .section-5-btns {
    margin-top: 30px;
@@ -818,7 +824,8 @@ button{
    color: rgba(76, 76, 76, .5);
 }
 
-.section-5-btns button:hover, .section-5-btns button:focus {
+.section-5-btns button:hover,
+.section-5-btns button:focus {
    cursor: pointer;
 }
 
@@ -845,7 +852,7 @@ button{
 .event-btn:hover {
    background-color: transparent;
    border: 1px solid #17192b;
-   
+
 }
 
 .event-btn:hover a {
@@ -857,13 +864,17 @@ button{
 
 #section-6 {
    background-image: url('./images/homepage/ready-bg-desktop.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
    height: 35vh;
 }
 
 .section-6 {
    justify-content: space-between;
    align-items: center;
-   height: 100%;;
+   height: 100%;
+   ;
 }
 
 .section-6 h3 {
@@ -875,7 +886,8 @@ button{
    background-color: transparent;
 }
 
-.reservation-btn:hover a, .reservation-btn:focus a {
+.reservation-btn:hover a,
+.reservation-btn:focus a {
    color: #111111;
 }
 
@@ -887,12 +899,13 @@ button{
    height: 100%;
 }
 
-.footer-text{
+.footer-text {
    justify-content: space-evenly;
    align-items: center;
    padding-block: 30px;
 }
-.footer-logo{
+
+.footer-logo {
    height: 40px;
 }
 
@@ -904,7 +917,8 @@ button{
    flex-direction: column;
 }
 
-.tablet, .mobile {
+.tablet,
+.mobile {
    display: none;
 }
 
@@ -918,11 +932,12 @@ button{
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 480px;   
+   height: 480px;
 }
 
 .booking-logo {
-   padding-top: 40px;;
+   padding-top: 40px;
+   ;
 }
 
 
@@ -930,6 +945,7 @@ button{
    position: relative;
    gap: 4rem;
    margin-top: 50px;
+
 }
 
 .booking-form {
@@ -942,6 +958,7 @@ button{
    max-width: 400px;
    margin-top: 60px;
    margin-right: 50px;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
 }
 
 .booking-text {
@@ -962,8 +979,8 @@ button{
    z-index: -1;
 }
 
-.booking-curve  {
-   position:relative;
+.booking-curve {
+   position: relative;
    right: 10vw;
    z-index: -2;
 }
@@ -974,14 +991,14 @@ button{
 
 .ampm {
    border: none;
-   
+
 }
 
 
 @media (max-width: 1100px) {
    .section-5-left img {
       padding-top: 150px;
-      
+
    }
 
    .booking h1 {
@@ -992,7 +1009,7 @@ button{
 @media (max-width: 1000px) {
    .section-5-left img {
       padding-top: 200px;
-      
+
    }
 }
 
@@ -1000,16 +1017,18 @@ button{
    .section-5-left img {
       padding-top: 300px;
    }
+
    .booking h1 {
       font-size: 3rem;
    }
 }
 
 @media (max-width: 768px) {
-   
+
    .desktop {
       display: none;
    }
+
    .tablet {
       display: block;
    }
@@ -1109,21 +1128,22 @@ button{
 
    .footer-text {
       display: grid;
-      grid-template-areas: 
-      "logo address"
-      "logo hours";
+      grid-template-areas:
+         "logo address"
+         "logo hours";
    }
+
    .footer-address {
       grid-area: address;
    }
-   
+
    .footer-hours {
       grid-area: hours
    }
 
    .footer-logo {
       grid-area: logo;
-      
+
       align-self: baseline;
    }
 
@@ -1148,7 +1168,7 @@ button{
 }
 
 @media (max-width: 600px) {
-   .booking h1{
+   .booking h1 {
       font-size: 3rem;
    }
 
@@ -1168,6 +1188,7 @@ button{
    .booking h1 {
       font-size: 2rem;
    }
+
    .container.booking {
       padding: 0;
    }
