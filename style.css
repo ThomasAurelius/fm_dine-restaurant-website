@@ -653,6 +653,11 @@ header {
    color: white
 }
 
+.hero-btn:hover a,
+.hero-btn:focus a{
+   color: #111111;
+}
+
 .hero-btn:hover,
 .hero-btn:focus {
    color: #111111;
@@ -886,9 +891,14 @@ button {
    background-color: transparent;
 }
 
+a > .reservation-btn  {
+   text-decoration: none;
+}
+
 .reservation-btn:hover a,
 .reservation-btn:focus a {
    color: #111111;
+   
 }
 
 /* Footer */

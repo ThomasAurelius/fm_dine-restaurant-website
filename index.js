@@ -22,9 +22,23 @@ minus.addEventListener('click', (e) => {
 })
 
 
+// family gathering section
 
+const title = document.getElementById('section-5-title')
+const text = document.getElementById('section-5-text')
 
+const familyBtn = document.getElementById('family')
+const specialBtn = document.getElementById('special')
+const socialBtn = document.getElementById('social')
 
+// specialBtn.addEventListener('click', () => {
+//    updateText()
+   
+// })
+
+// function updateText() {
+//    title.innerText = 'Special Events'
+// }
 
 
 
