@@ -24,22 +24,19 @@ minus.addEventListener('click', (e) => {
 
 // family gathering section
 
-const title = document.getElementById('section-5-title')
-const text = document.getElementById('section-5-text')
+const family = document.getElementById('family-article')
+const special = document.getElementById('special-article')
+const social = document.getElementById('social-event')
 
 const familyBtn = document.getElementById('family')
 const specialBtn = document.getElementById('special')
 const socialBtn = document.getElementById('social')
 
-// specialBtn.addEventListener('click', () => {
-//    updateText()
-   
-// })
-
-// function updateText() {
-//    title.innerText = 'Special Events'
-// }
-
+specialBtn.addEventListener('click', (e) => {
+   e.preventDefault()
+   family.setAttribute("hidden", true)
+   special.setAttribute("hidden", false)
+}
 
 
 
