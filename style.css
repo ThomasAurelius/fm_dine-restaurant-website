@@ -835,12 +835,21 @@ button {
 }
 
 .section-5-btns [aria-selected="true"] {
-   color: #111111
+   color: #111111;
 }
 
-/* .section-5-btns .active {
-   color: #111111
-} */
+.section-5-btns [aria-selected="true"]::after {
+   content: "";
+   background-color: #111111;
+   display: inline-block;
+   height: 1px;
+   width: 3rem;   
+   position: absolute;
+   bottom: 50%;
+   left: calc(50% - 9rem)
+}
+
+
 
 .section-5-btn {
    position: relative;
@@ -925,10 +934,12 @@ a > .reservation-btn  {
 
 .footer-address {
    flex-direction: column;
+   gap: .25em;
 }
 
 .footer-hours {
    flex-direction: column;
+   gap: .25em;
 }
 
 .tablet,
@@ -1123,6 +1134,14 @@ a > .reservation-btn  {
    .section-5-btn img {
       top: -10px;
       left: 40px;
+   }
+
+   .section-5-btns [aria-selected="true"]::after {
+      content: "";
+      background-color: #111111;
+      display: inline-block;
+      height: 0px;
+      
    }
 
    .section-6 {
