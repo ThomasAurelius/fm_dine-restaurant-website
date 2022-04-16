@@ -141,7 +141,7 @@
         
       </div>
       <div class="section-5-right">
-        <article class="section-5-info" id="family-article">
+        <article class="section-5-info" id="family-tab" aria-selected="true">
           <h2 class="section-5-title" >Family Gathering</h2>
           <p class="body1" >
             We love catering for entire families. So please bring everyone along for a special meal with your
@@ -149,7 +149,7 @@
           </p>
         </article>
 
-        <article hidden class="section-5-info" id="special-article">
+        <article hidden class="section-5-info" id="special-tab" aria-selected="false">
           <h2 class="section-5-title" >Special Events</h2>
           <p class="body1" >
             Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
@@ -157,7 +157,7 @@
           </p>
         </article>
 
-        <article hidden class="section-5-info" id="social-article">
+        <article hidden class="section-5-info" id="social-tab" aria-selected="false">
           <h2 class="section-5-title" >Social Events</h2>
           <p class="body1" >
             Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
@@ -165,21 +165,19 @@
           </p>
         </article>
         
-        <div class=""><button class="uppercase letterspacing-3 btn event-btn"><a class="" href="./booking.html">Book a table</a></button></div>
-        <div class="section-5-btns">
-          <div class="section-5-btn">
-            <img src="./images/patterns/pattern-divide.svg" alt="divider">
-            <button class="active fw-bold uppercase" id="family">Family Gathering</button>
-          </div>
+        <div class="">
+          <button class="uppercase letterspacing-3 btn event-btn"><a class="" href="./booking.html">Book a table</a></button>
+        </div>
 
-          <div class="section-5-btn">
-            <img class="hidden" src="./images/patterns/pattern-divide.svg" alt="divider">
-            <button class="fw-bold uppercase" id="special">Special Events</button>
-          </div>
-          <div class="section-5-btn">
-            <img class="hidden" src="./images/patterns/pattern-divide.svg" alt="divider">
-            <button class="fw-bold uppercase" id="social">Social Events</button>
-          </div>
+        <div class="section-5-btns tab-list" role="tablist" aria-label="event list">
+          
+            
+            <button class="section-5-btn fw-bold uppercase" role="tab" aria-selected="true" aria-controls="family-tab" id="family-btn">Family Gathering</button>           
+           
+            <button class="section-5-btn fw-bold uppercase" role="tab" aria-selected="false" aria-controls="special-tab" id="special-btn">Special Events</button>          
+          
+            <button class="section-5-btn fw-bold uppercase" role="tab" aria-selected="false" aria-controls="social-tab" id="social-btn">Social Events</button>
+          
         </div>
       </div>
     </div>

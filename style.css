@@ -834,7 +834,7 @@ button {
    cursor: pointer;
 }
 
-.section-5-btns .active {
+.section-5-btns [aria-selected="true"] {
    color: #111111
 }
 

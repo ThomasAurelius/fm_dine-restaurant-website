@@ -24,19 +24,41 @@ minus.addEventListener('click', (e) => {
 
 // family gathering section
 
-const family = document.getElementById('family-article')
-const special = document.getElementById('special-article')
-const social = document.getElementById('social-event')
+const tabList = document.querySelector('[role="tablist"]');
+const tabs = document.querySelectorAll('[role="tab"]');
 
-const familyBtn = document.getElementById('family')
-const specialBtn = document.getElementById('special')
-const socialBtn = document.getElementById('social')
+tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      console.log('fuck')
+    });
+});
 
-specialBtn.addEventListener('click', (e) => {
-   e.preventDefault()
-   family.setAttribute("hidden", true)
-   special.setAttribute("hidden", false)
+function changeTabPanel(e) {
+    const targetTab = e.target;
+    const targetPanel = targetTab.getAttribute("aria-controls");
+    
+    console.log(targetTab);
 }
+
+
+
+
+
+
+
+// const family = document.getElementById('family-article')
+// const special = document.getElementById('special-article')
+// const social = document.getElementById('social-event')
+
+// const familyBtn = document.getElementById('family')
+// const specialBtn = document.getElementById('special')
+// const socialBtn = document.getElementById('social')
+
+// specialBtn.addEventListener('click', (e) => {
+//    e.preventDefault()
+//    family.setAttribute("hidden", true)
+//    special.setAttribute("hidden", false)
+// }
 
 
 
