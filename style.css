@@ -1252,4 +1252,9 @@ a > .reservation-btn  {
       min-width: 375px;
       max-width: 375px;
    }
+
+   .section-3-lines {
+      z-index: -1;
+      top: 200px;
+   }
 }
